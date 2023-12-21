@@ -1,0 +1,71 @@
+*{
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+}
+.link{
+    display: inline-flex; 
+    margin-left: 0.875rem; 
+    align-items: center; 
+    font-weight: 500; 
+    color: #1F2937; 
+    
+}
+.link:hover {
+ color: #111827; 
+ }
+
+.subtitle{
+    color: #6B7280;
+} 
+.location{
+    width: 500px;
+    height: 400px;
+    /* position: relative;
+    left: 167px;   */
+}
+.lifecontent{
+   
+    display: flex;
+    justify-content: space-around;
+    margin-left: 202px;
+} 
+.travelcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffffff; 
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+}
+.country{
+    margin-left: 20px;
+}
+.year{
+    margin-left: 20px;
+}
+.music{
+    width: 300px;
+    height: 280px;
+    margin-right: 200px;
+   
+}
+
+.contactus{
+    position: relative;
+    top: 120px;
+    display: flex;
+    margin-left: 90px;    justify-content: space-around;
+    
+  
+}
+.para{
+    width: 300px;
+    height: 280px;
+    line-height: 1.25rem; 
+}
+.social{
+    position: relative;
+    bottom: 150px;
+    
+}  

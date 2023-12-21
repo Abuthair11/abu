@@ -1,0 +1,221 @@
+*{
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+}
+.subtitle{
+    color: #6B7280;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+}
+.leftSide{
+    top: 20px;
+    height: 333px;
+    width: 377px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+   
+    margin-top: 2rem;
+  
+}
+.image{
+    height: 250px;
+    width:  66.666667%;
+   border-radius: 50%;
+   border-width: 10px;
+   border-color: black
+}
+.about{
+    height: 333px;
+    width: 377px;
+    margin-left: 56px;
+}
+.name{
+    margin-left: 0.875rem; 
+    font-size: 1.875rem;
+    line-height: 2.25rem; 
+    font-weight: 600; 
+}
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+.para{
+    margin-left: 0.875rem; 
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #6B7280;
+}
+.content{
+    display: flex;
+    margin-left: 0.875rem; 
+    font-size: 1.125rem;
+    font-weight: 400px;
+    /* font-size: 1.17em; */
+
+    
+}
+.link{
+    display: inline-flex; 
+    margin-left: 0.875rem; 
+    align-items: center; 
+    font-weight: 500; 
+    color: #1F2937; 
+    
+}
+.link:hover {
+ color: #111827; 
+ }
+
+
+.content span::before{
+    content: '';
+    color: #aa3939;
+    display: flex;
+    font-weight: 400px;
+    animation: profile 5s infinite;
+  }
+  @keyframes profile {
+    0% { content: '  Software Developer 💻'}
+    50% { content :'  Cricketer 🏏'}
+    100% { content: '  Freelancer 👨🏻‍💻'}
+  }
+@keyframes wave-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    7% {
+        transform: rotate(14deg);
+    }
+    14% {
+        transform: rotate(-8deg);
+    }
+    21% {
+        transform: rotate(14deg);
+    }
+    28% {
+        transform: rotate(-4deg);
+    }
+    35% {
+        transform: rotate(10deg);
+    }
+    42% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.display{
+    display: grid ;
+    grid-template-columns : repeat(4, minmax(0, 1fr)); 
+    gap: 1rem; 
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    text-align: center; 
+    
+    }
+
+    .projectlist{
+        margin-top: 0.75rem; 
+        margin-top: 0.875rem; 
+        color: #6B7280; 
+        /* left: 276px; */
+       
+    }
+
+    .projectdisplay{
+        display: flex; 
+        aspect-ratio: 1 / 1; 
+        padding: 0.75rem; 
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 1rem; 
+        color: #ffffff; 
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+        opacity: 1; 
+        }
+        .projecttopic{
+            margin-top: 10px;
+        }
+
+        .life{
+            height: 355px;
+            width: 355px;
+            /* margin: 0px 70px; */
+            position: relative;
+        
+        }
+        .home3{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            left: 30px;
+            margin-top: 60px;
+        }
+        .lifeContent{
+            padding: 1rem; 
+            /* margin-top: 1rem;  */
+            border-radius: 0.25rem; 
+            background-color: #ffffff; 
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+            
+            @media (min-width: 640px) { 
+              display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+             }
+            }
+            .contentforLife{
+                
+                display: flex; 
+                /* margin-left: 0.875rem;  */
+            }
+
+            .random{
+                position: relative;
+                /* left: 246px; */
+                margin-top: 20px;
+                
+            }
+            
+            .memeimg{
+                object-fit: fit;
+                width: 405px;
+                height: 400px;
+                margin-top: 20px;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                border-radius: 30px;
+                /* position: relative;
+                left: 276px; */
+            }
+            .skills{
+                width: 400px;
+                height: 380px;
+                /* margin: 0px 70px;    */
+            }
+            .shadowimg{
+                width: 405px;
+                height: 380px;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                border-radius: 30px;
+                
+            }
+            .skillslist{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            }
+
+/* CSS for Video */
+            .video{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }

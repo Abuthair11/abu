@@ -1,0 +1,124 @@
+<div class="home">
+    <div class="leftSide">
+        <img class="image" src="./assets/Image.png" alt="" srcset="">
+        </div>
+        <div class="rightSide">
+            <div class="about">
+                <h2 class="name">
+                    <span class="wave" aria-hidden="true">👋 </span>
+                    <span>   Hi , I'm Abuthair</span>
+                </h2>
+        
+                <p  class="content">
+                    <span></span>
+                </p>  
+               <p class="para">Enthusiastic engineering graduate with basic knowledge in coding and design. Proficient in Java, HTML 5, JavaScript, CSS and Angular. Ability to learn new software and technologies quickly. Capability to work in teams by providing valuable support.</p>
+               <a routerLink="/about"  class="link"><span>Learn more about me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+               
+            </div>
+           
+        </div>
+    </div>
+    <div class="home">
+        <div class="project">
+            💻<a routerLink="/project" class="link"><span>Projects</span><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+            <p class="subtitle">My favorite Projects</p>
+            <div class="display">
+               @for(pro of projectshow ; track pro.id){
+                <div class="projectlist">
+                    <a href={{pro.url}} target="_blank" class="projectdisplay">
+                    <img src={{pro.logo}} alt="">
+                    </a>
+                    <div class="projecttopic">{{pro.simpleName}}</div>
+                </div> 
+            }
+            </div>
+            
+        </div>
+        <article class="life">
+            🧬 <a href="" class="link"><span>Life</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+            <p class="subtitle">A small infomation about me</p>
+            <div class="lifeContent">
+                <div class="contentforLife">
+                    <span>🎂</span>
+                    <div>
+                        <span><strong style="font-weight: 500; margin: 0px 13px; ">23</strong>years old</span>
+                        <p class="subtitle "> Date of Birth<strong style="font-weight: 500; margin: 0px 13px; ">11-01-2000</strong></p>   
+                    </div> 
+            </div>
+            <div class="contentforLife">
+                <span>📍</span>
+                <div>
+                    <span style="margin-left: 10px;">Currently in Chennai , <strong>India</strong></span>
+                    <p class="subtitle "> Time zone in India <strong style="font-weight: 500; margin: 0px 13px; ">(GMT+5:30)</strong></p>   
+                </div> 
+        </div>
+        <div class="contentforLife">
+            <span>👨‍💻</span>
+            <div>
+                @if(employeement == false){
+                    <span style="margin-left: 10px;">Currently  UnEmployed </span>
+                    <p class="subtitle "> Open to work<strong style="font-weight: 500; margin: 0px 13px;">Full stack Developer</strong></p>  
+                }
+                @else{
+                    <span style="margin-left: 10px;">Currently  Employed  at <strong>{{office}}</strong></span>
+                    <p class="subtitle ">At <strong style="font-weight: 500; margin: 0px 13px; ">{{position}}</strong></p>  
+                } 
+            </div> 
+        </div>
+        <div class="contentforLife">
+            <span>🏏</span>
+            <div>
+                <span style="margin-left: 10px;">Ex Professional Cricketer</span>
+                <p class="subtitle ">3 division player </p>   
+            </div> 
+        </div> 
+        </div>
+        </article>
+    </div>
+    <div class="home3">
+        <section class="random">
+            😂<a href="" class="link"><span>Random Meme</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+            <div >
+                <img src="https://randommeme-five.vercel.app/" class="memeimg" alt="">
+            </div>
+        </section>
+        
+        <section class="skills">
+            🤹🏻 <a routerLink="/project" class="link"><span>Skills</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+                <p class="subtitle">Learning never exhausts the mind.</p>
+               
+                    <div class="shadowimg">
+                        @for(skills of skillslist; track skills.title){
+                             <div class="skillslist">
+                        <div class="skillTitle">
+                            <span>{{skills.title}}</span>
+                        </div>
+                        <div class="skillsRating subtitle">
+                            {{skills.Subtitle}}
+                        </div>
+                     </div>
+                        }
+                    </div>
+                
+            
+        
+        </section>
+    
+    </div>
+    
+    <section class="video">
+        <div class="videoclip">
+            <video width="700px" style="   height: 404px; " controls>
+                <source src="./assets/cricketvideo.mp4" type="video/mp4">
+             
+                Your browser does not support HTML video.
+              </video>
+        </div>
+       
+    </section>
+<app-footer></app-footer>

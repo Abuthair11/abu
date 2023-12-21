@@ -1,0 +1,36 @@
+.footerspace{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 70px;
+}
+.sub{
+    font-size: 0.75rem;
+    color: #6B7280; 
+
+}
+
+.heart{
+    font-size: 9px;
+    animation: heartpump 1s infinite ;
+}
+/* @keyframes  heartpump 
+{
+   
+    0% {
+        font-size: 11px;
+      }
+      40% {
+        font-size: 12px;
+      }
+      60% {
+        font-size: 11px;
+      }
+      80% {
+        font-size: 12px;
+      }
+      100% {
+        font-size: 11px;
+      }
+
+ } */

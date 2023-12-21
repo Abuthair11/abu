@@ -1,0 +1,91 @@
+
+.aboutsecimg{
+    display: flex;
+    justify-content: center;
+}
+.aboutimg{
+    width: 503px;
+    height: 328px;
+    object-fit: contain;
+    
+}
+*{
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+}
+
+
+.aboutpara{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+    
+}
+.aboutpara1{
+    width: 320px;
+    line-height: 1.50rem;
+}
+.aboutpara2{
+    width: 320px;
+    line-height: 1.50rem;
+    margin-left: 20px;    
+}
+h3{
+    margin-top: 2rem; 
+font-size: 1.5rem;
+line-height: 2rem; 
+font-weight: 600; 
+}
+.experLogo{
+    display: flex;
+    padding: 0.75rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
+   
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    opacity: 1;
+    margin-top: 20px;
+}
+
+
+.companyName{
+    margin-left: 30px;
+    position: relative;
+    bottom: 20px;
+    display: flex; 
+   
+
+}
+.position{
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 22px
+}
+.positiontitle{
+    position: relative;
+    right: 576px;
+    top: 48px;
+    width: 500px;
+}
+.aboutname{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    right: 70px;
+}
+
+.exp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 300px;
+
+}
+.experiences{
+    position: relative;
+    left :300px
+}
