@@ -1,0 +1,62 @@
+.link{
+    display: inline-flex; 
+    margin-left: 0.875rem; 
+    align-items: center; 
+    font-weight: 500; 
+    color: #1F2937; 
+    
+}
+.link:hover {
+    color: #111827; 
+    }
+.home3{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 30px;
+    margin-top: 100px;
+}
+.lifeContent{
+    padding: 1rem; 
+    border-radius: 0.25rem; 
+    background-color: #ffffff; 
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+    
+    
+    }
+    .contentforLife{
+        
+        display: flex; 
+    }
+
+    .random{
+        position: relative;
+        margin-top: 20px;
+        
+    }
+    
+    .memeimg{
+        object-fit: fit;
+        width: 405px;
+        height: 400px;
+        margin-top: 20px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 30px;
+       
+    }
+    .skills{
+        width: 400px;
+        height: 380px;
+    }
+    .shadowimg{
+        width: 405px;
+        height: 380px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 30px;
+        
+    }
+    .skillslist{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    } 

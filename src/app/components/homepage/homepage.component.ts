@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { VideoComponent } from "../video/video.component";
+import { MemeandSkillsComponent } from "../memeand-skills/memeand-skills.component";
 
 @Component({
-  selector: 'app-homepage',
-  standalone: true,
-  imports: [FooterComponent,HeaderComponent,RouterLink,RouterOutlet],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+    selector: 'app-homepage',
+    standalone: true,
+    templateUrl: './homepage.component.html',
+    styleUrl: './homepage.component.css',
+    imports: [FooterComponent, HeaderComponent, RouterLink, RouterOutlet, VideoComponent, MemeandSkillsComponent]
 })
 export class HomepageComponent 
  {
