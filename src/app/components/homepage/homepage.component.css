@@ -149,6 +149,10 @@
             position: relative;
         
         }
+        .contentforLife{
+                
+            display: flex; 
+        }
         /* .home3{
             display: flex;
             justify-content: space-around;
@@ -164,10 +168,7 @@
             
             
             }
-            .contentforLife{
-                
-                display: flex; 
-            }
+          
 
             .random{
                 position: relative;
