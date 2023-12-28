@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [FooterComponent,CommonModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.css'
 })
@@ -80,7 +81,7 @@ export class ProjectComponent {
         "cover":"./assets/playermanagement.jpeg",
         "logo":"https://img.icons8.com/officel/48/spring-logo.png",
        "Description":"Effortlessly register players with our full-stack Team Management Application, merging the power of Spring Boot and Angular. Seamlessly capture player details, utilizing Spring Boot for robust backend functionality and Angular for a sleek, responsive frontend. Elevate your team management experience with this streamlined, end-to-end solution.",
-      "techStack":[{"stack":"Java"} ,{"stack": "Spring Boot"}, {"stack":"MYSQL"} ,{"stack": "POSTMAN"} , {"stack":"Angular" } ,{"stack":"JSON  "}]
+      "techStack":[{"stack":"Java"} ,{"stack": "Spring Boot"}, {"stack":"MYSQL"}  , {"stack":"Angular" } ,{"stack":"JSON  "}]
          },
 {
     "id": 7,
@@ -114,6 +115,15 @@ export class ProjectComponent {
           ]   
          }
   ];
+  getClassOf(id: number) {
+    if (id % 2 != 0) {
+      return 'projcard projcard-blue';
+    } 
+     else {
+      return 'projcard projcard-red'
+    }
+  }
+  
   
 
 }

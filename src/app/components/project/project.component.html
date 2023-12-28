@@ -1,73 +1,37 @@
-<!-- <div class="ProjectSection">
- <header style="margin-left: 285px;">
-        <h1>Projects</h1>
-        <p style="font-size: 20px ;color: #6B7280;"> These are the practice project </p>
-    </header>
- <div class="projectcontentval">
-
- 
-  @for(pro of projectshow; track pro.id){
-   <div class="projectlist">
-   
-   <img src= "{{pro.cover}}" class="cover" alt="">
-  
-  </div>
-
-  <div class="projectContent">
-
-    <h4 class="projectName">{{pro.projectName}}</h4>
-   <p style="line-height: 1.75rem;
-   position: relative;
-   left: 47px;"><span><span>Github :</span><a  target="_blank" href="{{pro.url}}">{{pro.simpleName}} </a> <br></span>{{pro.Description}}
-   </p>
-   @for(stack of pro.techStack ; track stack.stack){
-
-    <div class="stack stacklist">
-  
-          <span >{{stack.stack}}</span>
-      </div>
-    }
-  </div>
-  <div class="stacklist">
-    @for(stack of pro.techStack ; track stack.stack){
-
-        <div class="stack">
-      
-              <span >{{stack.stack}}</span>
-          </div>
-        }
-  </div>
-  
-  
-
- 
-  }
-    
-</div>
-</div>
--->
 
 <section>
   
-    <header class="header" >
-      <!-- style="margin-left: 285px;" -->
-      <h1>Projects</h1>
-      <p style="font-size: 20px ;color: #6B7280;"> These are the practice project </p>
-  </header>
-  @for(pro of projectshow; track pro.id){
-  <div class="projectcontentval">
-    <div>
-     <img src="{{pro.cover}}" class="cover" alt="">
-    </div>
-    <div>
-      <h4 class="projectName">{{pro.projectName}}</h4>
-   <p class="rightsec"><span><span>Github :</span><a  target="_blank" href="{{pro.url}}">{{pro.simpleName}} </a> <br></span> {{pro.Description}}
-   </p>
-    </div>
-  </div>
+  <header class="header" >
+     
+    <h1>Projects</h1>
+    <p style="font-size: 20px ;color: #6B7280;"> These are the practice project </p>
+</header>
+
+  <div class="projcard-container">
+    @for(pro of projectshow; track pro.id){
  
-  }
+	<div [ngClass]="getClassOf(pro.id)">
+		<div class="projcard-innerbox">
+          
+			<img class="projcard-img" src="{{pro.cover}}" />
+			<div class="projcard-textbox">
+				<div class="projcard-title">{{pro.simpleName}}</div>
+				<div class="projcard-subtitle">{{pro.projectName}}</div>
+				<div class="projcard-bar"></div>
+				<div class="projcard-description">{{pro.Description}}.</div>
+                @for(stack of pro.techStack ; track stack.stack){
+				<div class="projcard-tagbox">
+					<span class="projcard-tag" >{{stack.stack}}</span>
+					
+				</div>
+            }
+			</div>
+      
+		</div>
+    
+	</div>
+}
 
-
+</div>
 </section>
 <app-footer></app-footer> 
