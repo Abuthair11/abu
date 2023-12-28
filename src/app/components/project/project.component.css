@@ -3,13 +3,11 @@
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol";
 }
-.header {
-position: relative;
-left:400px
-}
+
 
 .projcard-container {
-	margin: 50px 0;
+	margin: 50px;
+	
 }
 
 /* Actual Code: */
