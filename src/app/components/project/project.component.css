@@ -120,6 +120,7 @@
 	font-size: 24px;
 }
 .projcard-subtitle {
+	margin-top: 5px;
 	font-family: 'Voces', 'Open Sans', arial, sans-serif;
 	color: #888;
 }
@@ -187,4 +188,7 @@
 	border-top: 13px solid transparent;
 	right: -10px;
 	top: 0;
+}
+.projcard-link{
+	font-size: 12px;
 }
