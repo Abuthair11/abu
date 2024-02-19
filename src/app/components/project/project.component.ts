@@ -13,7 +13,29 @@ export class ProjectComponent {
   projectshow:any =[
     {
       "id": 1,
-      "projectName": "Management using Spring",
+      "projectName": "Cricket Updates Full Stack project ",
+      "simpleName":"Cricket Updates",
+      "url":"https://github.com/Abuthair97/CricketUpdate_FullStack",
+      "cover":"./assets/cricketUpdates.png",
+      "logo": "https://img.icons8.com/officel/48/spring-logo.png",
+      "Description":" This Cricket Update Application is a Full Stack project that provides real-time cricket updates through a combination of Angular, Spring Boot, and MySQL. The application fetches data from Cricbuzz using Jsoup for web scraping and a RESTful API to deliver comprehensive cricket information. The main functionalities include retrieving a list of live matches and the latest news",
+      "techStack":[
+        {
+          "stack":"Angular"
+        } , {
+          "stack":"SpringBoot"
+        }
+        ,{
+          "stack":"MYSQL"
+        } ,{
+          "stack": "POSTMAN"
+        }
+      ]
+
+    },
+    {
+      "id": 2,
+      "projectName": "Management using SpringBoot",
       "simpleName":"EmploymentManagement",
          "url":"https://github.com/Abuthair11/Employmanagement_SpringBoot",
          "cover":"./assets/employement.png",
@@ -33,7 +55,7 @@ export class ProjectComponent {
       ]
     },
 {
-      "id": 2,
+      "id": 3,
       "projectName": "Movie Application using Angular",
       "simpleName":"bookMyShow",
        "url":"https://github.com/Abuthair11/Angular_MovieApp",
@@ -44,7 +66,7 @@ export class ProjectComponent {
         {"stack":"TypeScript"} ,{"stack": "Angular"} ,{"stack" : "JSON"} ]
          },
 {
-      "id": 3,
+      "id": 4,
       "projectName": "Calculator Android App",
       "simpleName":"Calculator",
         "url":"https://github.com/Abuthair11/AndroidStudio_CalculatorApp",
@@ -54,7 +76,7 @@ export class ProjectComponent {
       "techStack":[{"stack":"Kotlin"}]
          },
 {
-      "id": 4,
+      "id": 5,
       "projectName": "LinkTree using HTML CSS JS",
       "simpleName":"LinkTree",
       "url":"https://abuthair11.github.io/LinkTreeClone/",
@@ -64,7 +86,7 @@ export class ProjectComponent {
       "techStack":[{"stack":"HTML"} , {"stack":"CSS"} ,{"stack":"JS "}]
          },
 {
-      "id": 5,
+      "id": 6,
       "projectName": "Piano JS",
       "simpleName":"Piano",
         "url":"https://github.com/Abuthair97/PianoJs",
@@ -74,7 +96,7 @@ export class ProjectComponent {
        "techStack":[{"stack":"HTML"} , {"stack":"CSS"} ,{"stack":"JS "}]
          },
 {
-      "id": 6,
+      "id": 7,
       "projectName": "Player Management Application",
       "simpleName":"Player Management",
         "url":"https://github.com/Abuthair/Player_scouting_application_BE",
@@ -84,7 +106,7 @@ export class ProjectComponent {
       "techStack":[{"stack":"Java"} ,{"stack": "Spring Boot"}, {"stack":"MYSQL"}  , {"stack":"Angular" } ,{"stack":"JSON  "}]
          },
 {
-    "id": 7,
+    "id": 8,
     "projectName": "Disney Clone Using HTML CSS JS ",
     "simpleName":"Disney",
       "url":"https://abuthair11.github.io/Disney-Hotstar_Clone/",
@@ -94,7 +116,7 @@ export class ProjectComponent {
    "techStack":[{"stack":"HTML"} , {"stack":"CSS"} ,{"stack":"JS "}]
    },
    {
-    "id": 8,
+    "id": 9,
           "projectName": "Movie Spring Boot Application ",
           "simpleName":"MovieApp",
             "url":"https://github.com/Abuthair11/MovieBookingApp",
@@ -112,18 +134,18 @@ export class ProjectComponent {
                 } ,{
                   "stack": "POSTMAN"
                 }
-          ]   
+          ]
          }
   ];
   getClassOf(id: number) {
     if (id % 2 != 0) {
       return 'projcard projcard-blue';
-    } 
+    }
      else {
       return 'projcard projcard-red'
     }
   }
-  
-  
+
+
 
 }
